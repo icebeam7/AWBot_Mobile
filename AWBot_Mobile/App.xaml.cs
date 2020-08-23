@@ -11,7 +11,7 @@ namespace AWBot_Mobile
             InitializeComponent();
 
             Xamarin.Forms.PlatformConfiguration.AndroidSpecific.Application.SetWindowSoftInputModeAdjust(this, Xamarin.Forms.PlatformConfiguration.AndroidSpecific.WindowSoftInputModeAdjust.Resize);
-            MainPage = new NavigationPage(new Views.BotWebViewPage())
+            MainPage = new NavigationPage(new Views.BotWebViewPage());
         }
 
         protected override void OnStart()
