@@ -28,8 +28,8 @@ jobs:
       - name: Android
         run: |
           nuget restore
-          cd Blank.Android
-          msbuild Blank.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
+          cd AWBot_Mobile.Android
+          msbuild AWBot_Mobile.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
 
   iOS:
     runs-on: macos-latest
@@ -38,4 +38,4 @@ jobs:
       - name: iOS
         run: |
           nuget restore
-          msbuild Blank.iOS/Blank.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
+          msbuild AWBot_Mobile.iOS/AWBot_Mobile.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
